@@ -1,1 +1,6 @@
-
+{
+  "manifest_version": 3,
+  "name": "Discord Joiner",
+  "description": "A simple extension to help you enter in discord invite links as fast as possible",
+  "version": "0.1"
+}
