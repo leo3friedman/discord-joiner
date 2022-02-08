@@ -4,7 +4,106 @@
     <meta charset="UTF-8">
     <title>Discord Joiner</title>
 </head>
-<body>
+<style>
+    body {
+        width : 440px;
+        margin: 0;
+        flex-direction: column;
+    }
+    #header {
+        text-align: center;
+    }
+    #header-title {
+        font-weight: 700;
+        margin-bottom: 8px;
+        margin-top: 24px;
+        font-size: 24px;
+        line-height: 30px;
+    }
+    #header-info {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    #contents {
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-bottom: 16px;
+    }
+    #invite-link-header {
+        color: #4f5660;
+        margin-bottom: 8px;
+        font-family: Ginto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 12px;
+        line-height: 16px;
+        font-weight: 600;
+    }
+    #asterisk {
+        color: #ed4245;
+        padding-left: 4px;
+    }
+    #invite-input {
+        padding: 10px;
+        height: 20px;
+        width: 388px;
+        font-family: Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 16px;
+        border-radius: 3px;
+        background-color: #DFE2E5;
+        color: #2e3338;
+        border: none;
+    }
+    #invite-input:focus{
+        outline: none;
+    }
+    #footer {
+        width: 408px;
+        height: 38px;
+        padding: 16px;
+        background-color: #f6f6f7;
+        display: flex;
+        justify-content: space-between;
+    }
+    #back-button{
+        color: #747f8d;
+        font-size: 14px;
+        font-family: Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-weight: 500;
+        border: none;
+        background-color: transparent;
+    }
+    #back-button:hover {
+        cursor: pointer;
+        text-decoration: underline;
+    }
+    #join-server-button{
+        width: 96px;
+        height: 38px;
+        border-radius: 3px;
+        color: #FFFFFF;
+        background-color: #5865f2;
+        border: none;
+        font-family: Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-weight: 500;
+        text-decoration: none;
+    }
+    #join-server-button:hover {
+        cursor: pointer;
+        background-color: #4752C4;
+    }
 
+</style>
+<body>
+    <div id = "header">
+        <h3 id = "header-title">Join a Server</h3>
+        <div id = "header-info">Enter an invite below to join an existing server</div>
+    </div>
+    <div id = "contents">
+        <h5 id = "invite-link-header">INVITE LINK<span id="asterisk">*</span></h5>
+        <input id="invite-input" autofocus placeholder="https://discord.gg/hTKzmak" type="text" maxlength="999">
+    </div>
+    <div id="footer">
+        <button type="button" id="back-button">Back</button>
+        <button type="button" id="join-server-button">Join Server</button>
+    </div>
 </body>
 </html>
